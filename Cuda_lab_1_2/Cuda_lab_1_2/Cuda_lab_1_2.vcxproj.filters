@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="MatrixCuda.cu">
+      <Filter>Matrix_cuda_kernels</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Matrix.h">
+      <Filter>Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaCheck.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixCuda.cuh">
+      <Filter>Matrix_cuda_kernels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Matrix">
+      <UniqueIdentifier>{c3e5b92e-6fcb-46c5-b6c4-b8aa6e4c00c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{d6e35426-c4b0-410f-9fa5-20823114b1f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Matrix_cuda_kernels">
+      <UniqueIdentifier>{b71510a5-ca68-44ef-8595-4bd6d98b3641}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Matrix</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
