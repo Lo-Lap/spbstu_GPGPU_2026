@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{3ee3f595-bed0-4dab-b403-e01746ead359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{eec421f7-d8f9-45c2-a68e-eba34bb6d603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{be4980b4-d167-4bd4-b233-8e884141d3da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle">
+      <UniqueIdentifier>{b5f4bb1e-34a9-44a9-9225-ad486690d247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particleCudaKernels">
+      <UniqueIdentifier>{7f04e09a-eb68-4561-b968-b33bf8dfbe67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{d488afd6-be97-4907-bacb-246b5853ea5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\ColorPixel.ps">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\ParticleGeometry.gs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\ParticleVertex.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\LineVertexShader.vs">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="ParticleEngine.cu">
+      <Filter>particle</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ParticleCuda.cu">
+      <Filter>particleCudaKernels</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Render.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="GameParticle.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Render.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="GameParticle.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEngine.cuh">
+      <Filter>particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleCuda.cuh">
+      <Filter>particleCudaKernels</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionHelpers.cuh">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaCheck.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorMath.cuh">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
